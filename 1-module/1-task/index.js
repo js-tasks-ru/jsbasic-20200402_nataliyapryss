@@ -1,8 +1,10 @@
-/**
- * Factorial
- * @param {number} n
- * @returns {number}
- */
+
 function factorial(n) {
-  // ваш код...
+    while (n!==0 && n!==1){
+      return n*factorial(n-1);
+    }
+  
+    return 1;
+ 
+ 
 }
