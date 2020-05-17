@@ -1,9 +1,12 @@
-/**
- * showSalary
- * @param {Array} data - данные о пользователях
- * @param {number} age - максимальный возраст
- * @returns {string}
- */
 function showSalary(data, age) {
-  // ваш код...
-}
+      
+  let filterUser = data.filter((user) => {
+    return user.age <= age;
+  });
+  let salers = filterUser.map((user) =>{
+  return `${user.name}, ${user.balance}`;
+  });
+
+let saler = salers.join("\n");
+return saler;
+};
